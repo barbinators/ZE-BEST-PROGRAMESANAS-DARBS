@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lv">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
-
+    <title>Attēlu galerija</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Galerija ar attēlu filtrēšanu</h1>
+    </header>
+
+    <nav>
+        <button onclick="filtrētAttēlus('visi')">Visi</button>
+        <button onclick="filtrētAttēlus('daba')">Daba</button>
+        <button onclick="filtrētAttēlus('cilveki')">Cilvēki</button>
+        <button onclick="filtrētAttēlus('arhitektura')">Arhitektūra</button>
+    </nav>
+
+    <main>
+        <div id="left-content"></div>
+
+        <div id="center-content">
+            <div class="attēls daba"><img src="img/daba1.jpg" alt="Daba 1"></div>
+            <div class="attēls cilveki"><img src="img/cilveki1.jpg" alt="Cilvēki 1"></div>
+            <div class="attēls arhitektura"><img src="img/arhitektura1.jpg" alt="Arhitektūra 1"></div>
+            <div class="attēls daba"><img src="img/daba2.jpg" alt="Daba 2"></div>
+        </div>
+
+        <div id="right-content"></div>
+    </main>
+
+    <footer>
+        <p>© 2025 Galerijas projekts</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
