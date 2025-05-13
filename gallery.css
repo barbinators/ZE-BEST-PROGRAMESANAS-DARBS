@@ -1,0 +1,9 @@
+.attēls {
+    display: inline-block;
+    margin: 10px;
+}
+
+.attēls img {
+    width: 200px;
+    height: 150px;
+}
